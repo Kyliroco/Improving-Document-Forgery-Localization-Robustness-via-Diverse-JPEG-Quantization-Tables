@@ -6,7 +6,7 @@ Only header-extracted quantization matrices are provided.
 ## Available quantization tables
 
 - Luminance tables: `quantification_luminance.json`
-	- Number of tables: 854
+	- Number of tables: 859
 - Chrominance tables: `quantification_chrominance.json`
 	- Number of tables: 294
 
