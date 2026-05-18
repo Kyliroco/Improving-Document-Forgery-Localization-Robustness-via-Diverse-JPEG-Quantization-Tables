@@ -1,6 +1,7 @@
-# Improving-Document-Forgery-Localization-Robustness-via-Diverse-JPEG-Quantization-Tables
+# DocQT - Improving-Document-Forgery-Localization-Robustness-via-Diverse-JPEG-Quantization-Tables
 
 Repository containing JPEG quantization tables used for the Real-QT protocol.
+Dataset name: DocQT.
 Only header-extracted quantization matrices are provided.
 
 ## Available quantization tables
