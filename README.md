@@ -4,12 +4,33 @@ Repository containing JPEG quantization tables used for the Real-QT protocol.
 Dataset name: DocQT.
 Only header-extracted quantization matrices are provided.
 
+## Paper
+
+- arXiv: https://arxiv.org/abs/2605.19688
+
+## Citation
+
+If you use DocQT, this quantization-table repository, or build upon our article, please cite our paper:
+
+```bibtex
+@misc{ronfleuxcorail2026docqt,
+	title={DocQT: Improving Document Forgery Localization Robustness via Diverse JPEG Quantization Tables},
+	author={Kylian Ronfleux-Corail and Guillaume Bernard and Mickael Coustaty and Nicolas Sidere},
+	year={2026},
+	eprint={2605.19688},
+	archivePrefix={arXiv},
+	primaryClass={cs.CV},
+	doi={10.48550/arXiv.2605.19688},
+	url={https://arxiv.org/abs/2605.19688}
+}
+```
+
 ## Available quantization tables
 
 - Luminance tables: `quantification_luminance.json`
-	- Number of tables: 859
+  - Number of tables: 859
 - Chrominance tables: `quantification_chrominance.json`
-	- Number of tables: 294
+  - Number of tables: 294
 
 ## File format
 
