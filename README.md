@@ -8,6 +8,10 @@ Only header-extracted quantization matrices are provided.
 
 - arXiv: https://arxiv.org/abs/2605.19688
 
+## Hugging Face Dataset
+
+- Dataset on Hugging Face Hub: https://huggingface.co/datasets/Kyliroco/DocQT
+
 ## Citation
 
 If you use DocQT, this quantization-table repository, or build upon our article, please cite our paper:
@@ -44,6 +48,31 @@ In other words, each file follows this structure:
 
 - list[table]
 - table = list[64 integer values]
+
+## Example: load DocQT from Hugging Face Hub
+
+```python
+from datasets import load_dataset
+
+
+def load_docqt_from_hub() -> tuple[list[list[int]], list[list[int]]]:
+	dataset = load_dataset("Kyliroco/DocQT")
+
+	luminance_split = dataset["luminance"]
+	chrominance_split = dataset["chrominance"]
+
+	# The 64-value quantization tables are stored in the "text" column.
+	luminance_tables = luminance_split["text"]
+	chrominance_tables = chrominance_split["text"]
+
+	return luminance_tables, chrominance_tables
+
+
+luminance_tables, chrominance_tables = load_docqt_from_hub()
+```
+
+Each selected table must be a flat list of 64 integer values before passing
+it to Pillow through `qtables`.
 
 ## Example: use quantization tables with Pillow JPEG compression
 
