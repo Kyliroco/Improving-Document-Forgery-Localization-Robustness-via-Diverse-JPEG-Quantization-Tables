@@ -4,6 +4,8 @@ Repository containing JPEG quantization tables used for the Real-QT protocol.
 Dataset name: DocQT.
 Only header-extracted quantization matrices are provided.
 
+[![DOI](https://zenodo.org/badge/DOI/10.57967/hf/8906.svg)](https://doi.org/10.57967/hf/8906)
+
 ## Paper
 
 - arXiv: https://arxiv.org/abs/2605.19688
